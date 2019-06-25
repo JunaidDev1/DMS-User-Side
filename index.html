@@ -16,44 +16,32 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="assets/js/script.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
     <link rel=" stylesheet" type="text/css" href="assets/css/style.css">
     <link rel=" stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel=" stylesheet" type="text/css" href="assets/css/sidemenu.css">
 
 </head>
 
 <body>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
     <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark px-3 p-0">
-        <a class="navbar-brand p-0 mr-5">
-            <img src="assets/imgs/appLogo.jpg" class="appLogo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><i class="fas fa-home mr-1"></i> Home</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
-                        <img src="assets/imgs/user.png" class="userImg">
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item">
-                            <i class="fas fa-user-circle"></i> Profile
-                        </a>
-                        <a class="dropdown-item" href="login.html">
-                            <i class="fas fa-sign-out-alt"></i> Logout
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <span style="font-size:30px;cursor:pointer; color: #ffffff;" onclick="openNav()">&#9776;</span>
+        <img src="assets/imgs/headerLogo.png" class="appLogo">
+        <p class="text-right w-100 mt-2 mb-0">
+            <button class="btn btn-lg p-0 mx-5 mb-2 bg-primary text-white"><i class="fas fa-search"></i></button>
+            <button class="btn btn-lg p-0 mx-5 mb-2 bg-primary text-white"><i class="fas fa-comments"></i></button>
+        </p>
     </nav>
 
     <section>
@@ -100,13 +88,13 @@
             </div>
         </div>
 
-        <p class="fixedBtn">
-            <button class="btn btn-success">
-                <i class="far fa-edit"></i>
-            </button>
-        </p>
-
     </section>
+
+    <div class="row bottomTabs">
+        <div class="col-md-3">
+            
+        </div>
+    </div>
 
 </body>
 
