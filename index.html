@@ -13,8 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script src="assets/js/script.js"></script>
 
@@ -22,6 +21,7 @@
     <link rel=" stylesheet" type="text/css" href="assets/css/style.css">
     <link rel=" stylesheet" type="text/css" href="assets/css/header.css">
     <link rel=" stylesheet" type="text/css" href="assets/css/sidemenu.css">
+    <link rel=" stylesheet" type="text/css" href="assets/css/bottom-tabs.css">
 
 </head>
 
@@ -29,10 +29,24 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="profile.html" class="pl-0">
+            <div class="row" style="border-bottom: 1px solid #dedede;">
+                <div class="col-2">
+                    <img src="assets/imgs/user.png">
+                </div>
+                <div class="col-10 pl-4">
+                    <h5 class="dark mb-0">Robert Li</h5>
+                    <p class="gray mt-0"><small class="pl-0">View your profile</small></p>
+                </div>
+            </div>
+        </a>
+        <a href="#">My Wallet</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+        <a href="#">Support</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="login.html">Logout</a>
     </div>
 
     <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark px-3 p-0">
@@ -46,53 +60,146 @@
 
     <section>
 
-        <div class="row">
-            <div class="col-md-3">
-                <div class="anItem bg-white">
-                    <img src="assets/imgs/donate.jpg">
-                    <div class="innerDiv">
-                        <p class="text-white">Please help us to provide food to the poors and needy.</p>
-                        <button class="btn btn-light w-100">Donate Now</button>
-                    </div>
+        <div class="topSection">
+            <div class="row txtSection">
+                <div class="col-2 pl-0 pr-0">
+                    <img src="assets/imgs/user.png">
                 </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="anItem bg-white">
-                    <img src="assets/imgs/water.jpg">
-                    <div class="innerDiv">
-                        <p class="text-white">Please help us to provide food to the poors and needy.</p>
-                        <button class="btn btn-light w-100">Donate Now</button>
-                    </div>
+                <div class="col-10 pl-0">
+                    <a href="upload-post.html">
+                        <input type="text" placeholder="Get motivated...">
+                    </a>
                 </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="anItem bg-white">
-                    <img src="assets/imgs/food.jpg">
-                    <div class="innerDiv">
-                        <p class="text-white">Please help us to provide food to the poors and needy.</p>
-                        <button class="btn btn-light w-100">Donate Now</button>
+                <div class="row postTabs">
+                    <div class="col-4" style="border-right: 1px solid #bdf4dd;">
+                        <i class="fas fa-video text-danger"></i> Video
                     </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="anItem bg-white">
-                    <img src="assets/imgs/money.jpg">
-                    <div class="innerDiv">
-                        <p class="text-white">Please help us to provide food to the poors and needy.</p>
-                        <button class="btn btn-light w-100">Donate Now</button>
+                    <div class="col-4" style="border-right: 1px solid #bdf4dd;">
+                        <i class="far fa-image text-warning"></i> Photo
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-map-marker-alt text-info"></i> Check In
                     </div>
                 </div>
             </div>
         </div>
 
+
+        <!-- SOCIAL POSTS SECTION HERE -->
+
+        <div class="socialPostSection">
+
+            <div class="anItem">
+                <div class="row">
+                    <div class="col-2 pr-0">
+                        <img src="assets/imgs/user.png" class="postPerson">
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p class="mt-2">Amy Parry <small class="ml-2">19 mins</small></p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <img src="assets/imgs/sport-man-expression_1368-39899.jpg">
+                </div>
+                <div class="row likesTabs">
+                    <div class="col-3" style="border-right: 1px solid #dedede;">
+                        <img src="assets/imgs/like.png"> Like
+                    </div>
+                    <div class="col-5" style="border-right: 1px solid #dedede;">
+                        <img src="assets/imgs/react3.png"> 250+Supporters
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-comment-dots primary"></i> 15 Comments
+                    </div>
+                </div>
+                <p class="postDescription">
+                    Stocked on MS Bronson Bike Raffle Lorem ipsum dolor sit amet
+                </p>
+                <p class="gray mt-0"><small>View Full Story</small></p>
+            </div>
+
+            <div class="anItem">
+                <div class="row">
+                    <div class="col-2 pr-0">
+                        <img src="assets/imgs/user.png" class="postPerson">
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p class="mt-2">Amy Parry <small class="ml-2">19 mins</small></p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <img src="assets/imgs/manual-donations-featured.jpg">
+                </div>
+                <div class="row likesTabs">
+                    <div class="col-3" style="border-right: 1px solid #dedede;">
+                        <img src="assets/imgs/like.png"> Like
+                    </div>
+                    <div class="col-5" style="border-right: 1px solid #dedede;">
+                        <img src="assets/imgs/react3.png"> 250+Supporters
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-comment-dots primary"></i> 15 Comments
+                    </div>
+                </div>
+                <p class="postDescription">
+                    Stocked on MS Bronson Bike Raffle Lorem ipsum dolor sit amet
+                </p>
+                <p class="gray mt-0"><small>View Full Story</small></p>
+            </div>
+
+            <div class="anItem">
+                <div class="row">
+                    <div class="col-2 pr-0">
+                        <img src="assets/imgs/user.png" class="postPerson">
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p class="mt-2">Amy Parry <small class="ml-2">19 mins</small></p>
+                    </div>
+                </div>
+                <div class="postContent">
+                    <img src="assets/imgs/young-man-beach_7ko1ebtb__F0000.png">
+                </div>
+                <div class="row likesTabs">
+                    <div class="col-3" style="border-right: 1px solid #dedede;">
+                        <img src="assets/imgs/like.png"> Like
+                    </div>
+                    <div class="col-5" style="border-right: 1px solid #dedede;">
+                        <img src="assets/imgs/react3.png"> 250+Supporters
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-comment-dots primary"></i> 15 Comments
+                    </div>
+                </div>
+                <p class="postDescription">
+                    Stocked on MS Bronson Bike Raffle Lorem ipsum dolor sit amet
+                </p>
+                <p class="gray mt-0"><small>View Full Story</small></p>
+            </div>
+
+        </div>
+
     </section>
 
     <div class="row bottomTabs">
-        <div class="col-md-3">
-            
+        <div class="col-3">
+            <a href="index.html">
+                <i class="fas fa-home text-success"></i>
+            </a>
+        </div>
+        <div class="col-3">
+            <a href="notifications.html">
+                <i class="fas fa-bell"></i>
+            </a>
+        </div>
+        <div class="col-3">
+            <a href="wallet.html">
+                <i class="fas fa-wallet"></i>
+            </a>
+        </div>
+        <div class="col-3">
+            <a href="profile.html">
+                <i class="fas fa-user"></i>
+            </a>
         </div>
     </div>
 
