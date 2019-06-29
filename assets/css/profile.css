@@ -1,0 +1,54 @@
+.topSection img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.topSection p {
+  margin-bottom: 0px;
+}
+
+.topSection .gray {
+  margin-top: -8px !important;
+}
+
+/* SOCIAL POST SECTION STYLING HERE */
+
+.socialPostSection {
+  margin-top: 1em;
+  margin-bottom: 3em;
+}
+
+.anItem {
+  padding-top: 5px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.anItem .postPerson {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.postContent img {
+  width: 100% !important;
+  max-height: 300px !important;
+  object-fit: contain;
+}
+
+.likesTabs {
+  padding: 10px 0px;
+  font-size: 13px;
+}
+
+.likesTabs img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.postDescription {
+  margin: 0px !important;
+  padding-left: 10px;
+}

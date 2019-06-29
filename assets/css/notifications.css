@@ -1,0 +1,15 @@
+.anItem {
+    padding: 8px 0px;
+    border-bottom: 1px solid #dedede;
+}
+
+.anItem img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.anItem p {
+    margin: 0px;
+    color: #393939;
+}

@@ -1,9 +1,15 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    document.getElementById("mySidenav").style.width = "300px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.body.style.backgroundColor = "#f5f5f5";
+}
+
+function openActionSheet() {
+    document.getElementById("changePassword").style.height = "300px";
+}
+
+function closeActionSheet() {
+    document.getElementById("changePassword").style.height = "0";
 }

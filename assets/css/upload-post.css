@@ -1,0 +1,39 @@
+.postInfo {
+    padding: 0px 10px;
+    margin-bottom: 3em;
+}
+
+.postInfo label {
+    color: #1eb87d;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 1.5em;
+    font-size: 14px;
+}
+
+.postInfo input,
+.postInfo textarea {
+    border: none;
+    border-bottom: 1px solid #dedede;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.topSection img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.uploadContent {
+    width: 100%;
+    height: 250px;
+    background-color: #f2fdf9;
+    text-align: center;
+}
+
+.uploadIcon {
+    margin-top: 4em;
+    width: 100px;
+}

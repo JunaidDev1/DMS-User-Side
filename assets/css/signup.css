@@ -6,17 +6,9 @@ body {
   padding: 30px;
 }
 
-.userImg {
-  cursor: pointer;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #f5f5f5;
-}
-
-.appLogo img {
-  width: 250px;
-  margin-bottom: 3em;
+img {
+  width: 200px;
+  margin: 2em 0em;
 }
 
 .input-group,
@@ -54,7 +46,7 @@ button i {
 }
 
 button {
-  border-radius: 0px;
+  border-radius: 0px !important;
 }
 
 @media only screen and (max-width: 600px) {
