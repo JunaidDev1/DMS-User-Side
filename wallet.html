@@ -51,16 +51,143 @@
 
     <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark px-3 p-0">
         <span style="font-size:30px;cursor:pointer; color: #ffffff;" onclick="openNav()">&#9776;</span>
-        <span class="white" style="margin: auto">Wallet</span>
+        <img src="assets/imgs/headerLogo.png" class="appLogo">
+        <p class="text-right pt-1 mb-0">
+            <a>
+                <i class="fas fa-search white mr-3"></i>
+            </a>
+            <a href="inbox.html">
+                <i class="fas fa-comments white"></i>
+            </a>
+        </p>
     </nav>
+
 
     <section>
 
-        <div class="text-center pt-5">
-            <h5 class="mt-5">Wallet Screen</h5>
+        <div class="text-center mb-3">
+            <p class="mb-0">My Wallet</p>
+            <h3 class="primary mt-0">$15.00</h3>
+        </div>
+
+        <div class="anItem">
+            <a href="add-money.html" class="text-dark">
+                <p>Add Money to Wallet <span class="float-right"> <i class="fas fa-chevron-right"></i></span></p>
+            </a>
+        </div>
+
+        <hr/>
+
+        <div class="anItem">
+            <p>Send Money to Bank <span class="float-right"> <i class="fas fa-chevron-right"></i></span></p>
+        </div>
+
+        <div class="anItem">
+            <button onclick="openDonateNow()" class="btn rounded-0 btn-lg bg-primary white w-100">Make a Donation</button>
+        </div>
+
+        <div class="recentTransactions mt-3 py-3 px-2 mb-3">
+
+            <p class="mb-0">Recents <span class="float-right"> Filter <img onclick="openFiltersPopup()" src="assets/imgs/filters.png"></span></p>
+            <p class="gray mt-0">
+                <small>05 April 2019</small>
+            </p>
+
+            <div class="row aTransaction">
+                <div class="col-2 text-center pl-0 pr-0">
+                    <img src="assets/imgs/outgoing.png">
+                </div>
+                <div class="col-8">
+                    <p class="mb-0">Donate to Loar</p>
+                    <p class="mt-0 mb-0 gray"><small>02:04 PM</small></p>
+                </div>
+                <div class="col-2 text-right pl-0">
+                    <p class="text-danger mt-3">- $25</p>
+                </div>
+            </div>
+
+            <div class="row aTransaction">
+                <div class="col-2 text-center pl-0 pr-0">
+                    <img src="assets/imgs/incoming.png">
+                </div>
+                <div class="col-8">
+                    <p class="mb-0">Added Money from Bank</p>
+                    <p class="mt-0 mb-0 gray"><small>02:04 PM</small></p>
+                </div>
+                <div class="col-2 text-right pl-0">
+                    <p class="text-success mt-3">+ $30</p>
+                </div>
+            </div>
+
+            <div class="row aTransaction">
+                <div class="col-2 text-center pl-0 pr-0">
+                    <img src="assets/imgs/outgoing.png">
+                </div>
+                <div class="col-8">
+                    <p class="mb-0">Donate to Loar</p>
+                    <p class="mt-0 mb-0 gray"><small>02:04 PM</small></p>
+                </div>
+                <div class="col-2 text-right pl-0">
+                    <p class="text-danger mt-3">- $25</p>
+                </div>
+            </div>
+
+            <div class="row aTransaction">
+                <div class="col-2 text-center pl-0 pr-0">
+                    <img src="assets/imgs/incoming.png">
+                </div>
+                <div class="col-8">
+                    <p class="mb-0">Added Money from Bank</p>
+                    <p class="mt-0 mb-0 gray"><small>02:04 PM</small></p>
+                </div>
+                <div class="col-2 text-right pl-0">
+                    <p class="text-success mt-3">+ $30</p>
+                </div>
+            </div>
+
         </div>
 
     </section>
+
+    <div id="filterPopup" class="bottomUp">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeFiltersPopup()">&times;</a>
+        <div style="padding: 20px;">
+            <p>Filter Transactions</p>
+            <div class="custom-control custom-radio my-3">
+                <input checked type="radio" class="custom-control-input" id="a" name="filters" value="all">
+                <label class="custom-control-label" for="a">All</label>
+            </div>
+            <div class="custom-control custom-radio my-3">
+                <input type="radio" class="custom-control-input" id="b" name="filters" value="paid">
+                <label class="custom-control-label" for="b">Paid</label>
+            </div>
+            <div class="custom-control custom-radio my-3">
+                <input type="radio" class="custom-control-input" id="c" name="filters" value="received">
+                <label class="custom-control-label" for="c">Received</label>
+            </div>
+            <div class="custom-control custom-radio my-3">
+                <input type="radio" class="custom-control-input" id="d" name="filters" value="added">
+                <label class="custom-control-label" for="d">Added</label>
+            </div>
+        </div>
+    </div>
+
+    <div id="donateNow" class="bottomUp">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDonateNow()">&times;</a>
+        <div style="padding: 20px;">
+            <p>Donate Now</p>
+            <div class="text-center">
+                <img src="assets/imgs/donate.png" style="width: 200px;">
+            </div>
+            <p class="text-center">Select Amount</p>
+            <h5 class="text-center text-success">$5</h5>
+            <input type="range" class="custom-range" id="customRange" step="5">
+            <h5 class="text-success">$0.25 <span class="float-right">$10</span></h5>
+            <a href="donation-sent.html">
+                <button class="bg-primary btn btn-lg white w-100 mt-2">Donate Now</button>
+            </a>
+        </div>
+    </div>
 
     <div class="row bottomTabs">
         <div class="col-3">

@@ -1,0 +1,61 @@
+.anItem {
+    padding: 5px 5px 0px 5px;
+}
+
+hr {
+    margin-top: 0px;
+}
+
+.recentTransactions {
+    background-color: #f2fdf9;
+}
+
+.recentTransactions p img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.recentTransactions .aTransaction {
+    background-color: #ffffff;
+    padding: 10px 5px 0px 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recentTransactions .aTransaction p {
+    font-size: 14px;
+}
+
+.recentTransactions .aTransaction img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.bottomUp {
+    position: fixed;
+    z-index: 3 !important;
+    bottom: 0;
+    height: 0px;
+    width: 100% !important;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.1s;
+    box-shadow: 0px -100px 400px rgba(0, 0, 0, 0.2);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bottomUp .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
